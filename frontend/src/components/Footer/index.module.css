@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.email {
+  font-size: 16px;
+  font-weight: 200;
+  color: #2d2b2b;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links > a {
+  border: 1px solid #464343;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+
+.nav-wrapper {
+  margin: 2rem 0;
+}
+.copyright {
+  font-size: 10px;
+  font-weight: 200;
+  color: #2d2b2b;
+}

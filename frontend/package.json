@@ -1,0 +1,73 @@
+{
+  "name": "veriflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VeriFlow - Verifiable AI Data Marketplace on Filecoin",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "find:unused": "next-unused"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.0.18",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@radix-ui/react-toast": "^1.1.5",
+    "@rainbow-me/rainbowkit": "^2.1.1",
+    "@tanstack/react-query": "^5.28.4",
+    "@zondax/beryx": "^2.0.2",
+    "cids": "^1.1.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "framer-motion": "^11.0.14",
+    "ipfs-http-client": "^60.0.1",
+    "lodash.merge": "^4.6.2",
+    "lucide-react": "^0.525.0",
+    "next": "^14.2.3",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-dropzone": "^14.2.3",
+    "react-hot-toast": "^2.4.1",
+    "recharts": "^2.12.2",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "viem": "2.9.31",
+    "wagmi": "^2.9.2",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.9",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "next-unused": "^0.0.6",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.8.3"
+  },
+  "next-unused": {
+    "alias": {
+      "@": "src",
+      "@/components": "src/components",
+      "@/lib": "src/lib",
+      "@/utils": "src/utils",
+      "@/styles": "src/styles",
+      "@/hooks": "src/hooks",
+      "@/context": "src/context"
+    },
+    "include": ["src/components", "src/lib", "src/utils", "src/hooks", "src/context", "src/reusables"],
+    "exclude": [],
+    "entrypoints": ["src/app"]
+  }
+}

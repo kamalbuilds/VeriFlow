@@ -1,0 +1,41 @@
+.btn {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e5ee4;
+}
+.btn:disabled {
+  background-color: #b3b3b3;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.btn.primary {
+  background-color: #246cf9;
+  color: #ffffff;
+}
+.btn.secondary {
+  border: 1px solid #246cf9;
+  background-color: #ffffff;
+  color: #246cf9;
+}
+
+.btn.small {
+  font-size: 16px;
+  padding: 0.3rem 0.7rem;
+  border: none;
+}
+.btn.medium {
+  font-size: 16px;
+}
+.btn.large {
+  font-size: 20px;
+}

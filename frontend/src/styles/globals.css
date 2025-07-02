@@ -1,0 +1,402 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@layer base {
+  :root {
+    /* shadcn/ui theme variables */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+
+    /*VeriFlow Primary Colors*/
+    --vf-primary: 0, 82, 204;
+    --on-primary: 255, 255, 255;
+    --primary-container: 179, 212, 255;
+    --on-primary-container: 9, 30, 66;
+
+    /*VeriFlow Secondary Colors*/
+    --vf-secondary: 101, 84, 192;
+    --on-secondary: 255, 255, 255;
+    --secondary-container: 192, 182, 242;
+    --on-secondary-container: 9, 30, 66;
+
+    /*Tertiary Colors*/
+    --tertiary: 0, 106, 99;
+    --on-tertiary: 255, 255, 255;
+    --tertiary-container: 157, 242, 232;
+    --on-tertiary-container: 76, 107, 31;
+
+    /*Error Colors*/
+    --error: 186, 26, 26;
+    --on-error: 255, 255, 255;
+    --error-container: 255, 218, 214;
+    --on-error-container: 65, 0, 2;
+
+    /*Surface Colors*/
+    --surface: 255, 255, 255;
+    --on-surface: 9, 30, 66;
+    --on-surface-variant: 9, 30, 66;
+    --surface-dim: 9, 30, 66;
+    --surface-bright: 9, 30, 66;
+
+    /*Surface Container Colors*/
+    --surface-container-lowest: 255, 255, 255;
+    --surface-container-low: 247, 248, 249;
+    --surface-container: 9, 30, 66;
+    --surface-container-high: 240, 243, 244;
+    --surface-container-highest: 179, 185, 196;
+
+    /*Inverse Colors*/
+    --inverse-surface: 23, 43, 77;
+    --inverse-on-surface: 241, 240, 247;
+    --inverse-primary: 180, 197, 255;
+
+    /*Outline Colors*/
+    --outline: 117, 118, 128;
+    --outline-variant: 202, 196, 208;
+
+    /*Elevation*/
+    --elevation-one: 0px 1px 3px 1px rgba(0, 0, 0, 0.15),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    --elevation-two: 0px 2px 6px 2px rgba(0, 0, 0, 0.15),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    --elevation-three: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+      0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    --elevation-four: 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
+      0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+
+    --max-width: 1200px;
+  }
+
+  .dark {
+    /* shadcn/ui dark theme variables */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+
+    /*VeriFlow Dark Theme Colors*/
+    --vf-primary: 203, 190, 255;
+    --on-primary: 50, 40, 94;
+    --primary-container: 73, 62, 118;
+    --on-primary-container: 230, 222, 255;
+
+    /*Secondary Colors*/
+    --vf-secondary: 202, 195, 220;
+    --on-secondary: 50, 46, 65;
+    --secondary-container: 72, 68, 88;
+    --on-secondary-container: 230, 223, 249;
+
+    /*Surface Colors*/
+    --surface: 20, 19, 24;
+    --on-surface: 230, 225, 233;
+    --on-surface-variant: 201, 196, 208;
+    --surface-dim: 58, 56, 62;
+    --surface-bright: 58, 56, 62;
+
+    /*Surface Container Colors*/
+    --surface-container-lowest: 15, 13, 19;
+    --surface-container-low: 28, 27, 32;
+    --surface-container: 9, 30, 66;
+    --surface-container-high: 43, 41, 47;
+    --surface-container-highest: 54, 52, 58;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    @apply bg-background text-foreground;
+    max-width: 100vw;
+    height: 100%;
+    font-family: "Inter", "Roboto", sans-serif;
+    font-style: normal;
+  }
+
+  input {
+    all: unset;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/* VeriFlow AI Marketplace Custom Components */
+@layer components {
+  .vf-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .vf-gradient-secondary {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  }
+  
+  .vf-gradient-accent {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  }
+
+  .vf-card {
+    @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-200;
+  }
+
+  .vf-button-primary {
+    @apply bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-medium px-4 py-2 rounded-md transition-all duration-200 transform hover:scale-105;
+  }
+
+  .vf-button-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 font-medium px-4 py-2 rounded-md transition-all duration-200;
+  }
+
+  .vf-text-primary {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+  
+  .vf-text-secondary {
+    @apply text-gray-600 dark:text-gray-400;
+  }
+  
+  .vf-text-muted {
+    @apply text-gray-500 dark:text-gray-500;
+  }
+  
+  .vf-ai-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 dark:from-purple-900 dark:to-pink-900 dark:text-purple-200;
+  }
+  
+  .vf-verified-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+  }
+  
+  .vf-price-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-gradient-to-r from-yellow-400 to-orange-500 text-white;
+  }
+  
+  .vf-rating {
+    @apply inline-flex items-center text-yellow-500;
+  }
+  
+  .vf-dataset-card {
+    @apply group relative bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .vf-dataset-card::before {
+    content: '';
+    @apply absolute inset-0 rounded-xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+  
+  .vf-stats-card {
+    @apply bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .vf-marketplace-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+  
+  .vf-search-bar {
+    @apply relative flex items-center w-full max-w-lg mx-auto;
+  }
+  
+  .vf-filter-chip {
+    @apply inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium border transition-all duration-200 cursor-pointer;
+  }
+  
+  .vf-filter-chip.active {
+    @apply bg-indigo-100 border-indigo-300 text-indigo-700 dark:bg-indigo-900 dark:border-indigo-600 dark:text-indigo-200;
+  }
+  
+  .vf-filter-chip.inactive {
+    @apply bg-gray-100 border-gray-300 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600;
+  }
+}
+
+/* Animation utilities */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  .animate-bounce-subtle {
+    animation: bounceSubtle 2s infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceSubtle {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Loading states */
+.loading-skeleton {
+  @apply animate-pulse bg-gray-200 dark:bg-gray-700 rounded;
+}
+
+.loading-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .vf-marketplace-grid {
+    @apply grid-cols-1 gap-4;
+  }
+  
+  .vf-stats-grid {
+    @apply grid-cols-2 gap-4;
+  }
+}
+
+@media (max-width: 768px) {
+  .vf-marketplace-grid {
+    @apply grid-cols-1 md:grid-cols-2 gap-4;
+  }
+}
+
+/* Legacy VeriFlow styles for compatibility */
+input[type="radio"] {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  margin: 6px;
+  padding: 0;
+  border: 2px solid rgba(var(--on-surface-variant), 1);
+  border-radius: 50%;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="radio"]:not(:disabled):checked {
+  border-color: rgba(var(--vf-primary), 1);
+  background-color: rgba(var(--vf-primary), 1);
+  background-clip: content-box;
+  padding: 3px;
+  background-image: radial-gradient(
+    circle,
+    rgba(var(--vf-primary), 1) 0%,
+    rgba(var(--vf-primary), 1) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.spinner {
+  border: 4px solid rgba(var(--on-surface-variant), 0.1);
+  border-top: 4px solid rgba(var(--vf-primary), 1);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin: 0 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.toast {
+  @apply text-sm font-medium px-4 py-3 rounded-xl;
+}

@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.navLink {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #6366f1;
+} 

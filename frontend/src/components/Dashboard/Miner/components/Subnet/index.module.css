@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3rem;
+}
+.subnets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,112 @@
+.container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 400px;
+  max-width: 700px;
+}
+.container h1,
+.miner > h1,
+.subnet > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000000;
+  line-height: 32.5px;
+}
+.content {
+  display: flex;
+}
+.miner,
+.subnet {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+.miner {
+  padding-right: 1rem;
+}
+.subnet {
+  padding-left: 1rem;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.row {
+  display: flex;
+  gap: 0.5rem;
+  /* align-items: center; */
+  overflow: hidden;
+}
+.row > p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12.3px;
+  color: #8f8b8b;
+  /* word-wrap: break-word; */
+}
+.row > p:last-child {
+  /* word-break: break-all; */
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.input-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px dashed #000;
+}
+.input-field-wrapper > p {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12.3px;
+  color: #464343;
+}
+.input-field-wrapper > label {
+  margin-top: 1rem;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  background-color: #246cf9;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.input {
+  display: none;
+}
+.files {
+  width: 100%;
+  overflow: hidden;
+}
+.file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  gap: 1rem;
+}
+.file > p {
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12.3px;
+  color: #464343;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}

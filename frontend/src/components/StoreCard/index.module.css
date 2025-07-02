@@ -1,0 +1,56 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 10px 0px #00000040;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 261px;
+}
+
+.deal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.deal-size > p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24.6px;
+}
+.img {
+  cursor: pointer;
+}
+.deal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.date-row > p {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 10.25px;
+  text-align: left;
+  color: #8f8b8b;
+}
+
+.miner-address > p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12.3px;
+  color: #8f8b8b;
+  word-wrap: break-word;
+}
+
+.miner-address > p > span {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12.3px;
+  color: #8f8b8b;
+}
