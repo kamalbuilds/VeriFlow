@@ -1,0 +1,15 @@
+{
+    "name": "VerifiAI",
+    "tagline": "VerifiAI is a decentralized AI marketplace that allows users to buy and sell AI models.",
+    "description": "VerifiAI is a decentralized AI marketplace that allows users to buy and sell AI models.",
+    "team": [
+      {
+        "name": "Kamal Nayan Singh",
+        "email": "geniusamansingh@gmail.com"
+      }
+    ],
+    "demo_url": "https://verifiai-filecoin.vercel.app",
+    "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "technologies": ["Filecoin", "Next.js", "Ethers.js"]
+}s
+  
