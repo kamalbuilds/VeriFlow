@@ -10,6 +10,5 @@
     ],
     "demo_url": "https://verifiai-filecoin.vercel.app",
     "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "technologies": ["Filecoin", "Next.js", "Ethers.js"]
-}s
-  
+    "technologies": ["Filecoin", "usdfc", "Next.js", "Ethers.js"]
+}
