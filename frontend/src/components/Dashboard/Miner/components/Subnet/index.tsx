@@ -1,11 +1,11 @@
-import SubnetCard from "@/components/SubnetCard";
 import styles from "./index.module.css";
 import SubnetModal from "@/components/SubnetModal";
 import Button from "@/reusables/Button";
 import { useState } from "react";
-import useDealClient from "@/hooks/useDealClient";
 import { useMiner } from "@/context/minerContext";
 import InfoModal from "@/components/InfoModal";
+import SubnetCard from "@/components/SubnetCard";
+import useDealClient from "@/hooks/useDealClient";
 
 const dummyMiner = {
   miner: "t3xv7b7v6",
