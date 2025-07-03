@@ -4,6 +4,7 @@ import { Active, Pending, Challenged } from "../components";
 import { Subnet } from "./components";
 import styles from "./index.module.css";
 import { useDeals } from "@/context/DealContext";
+
 export default function Miner() {
   const list = ["pending", "active", "challenged", "subnet"];
   const [selected, setSelected] = useState("active");
@@ -31,7 +32,7 @@ export default function Miner() {
         handleSelectMenuItem={handleSelectMenuItem}
         selected={selected}
       />
-      <div className={styles["selected-container"]}>
+      {/* <div className={styles["selected-container"]}>
         {selected === "active" && (
           <Active deals={[]} message={"No Active Deals"} />
         )}
@@ -45,7 +46,7 @@ export default function Miner() {
           />
         )}
         {selected === "subnet" && <Subnet />}
-      </div>
+      </div> */}
     </div>
   );
 }

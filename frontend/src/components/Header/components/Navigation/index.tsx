@@ -14,7 +14,7 @@ export default function Navigation() {
 
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "Marketplace", href: "/marketplace" },
+    // { name: "Marketplace", href: "/marketplace" },
     { name: "Dashboard", href: "/dashboard" },
   ];
 
